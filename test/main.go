@@ -1,7 +1,9 @@
 package main
-import(
-	"https://github.com/wushuwei/golang/tree/main/test/functions"
+
+import (
+	"github.com/wushuwei/golang/test/functions"
 )
+
 func main() {
-	
+	functions.HelloWorld()
 }
