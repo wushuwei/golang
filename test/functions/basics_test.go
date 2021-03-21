@@ -37,6 +37,34 @@ func TestFunctions(t *testing.T) {
 			0,
 			false,
 		},
+		{
+			"test2",
+			args{0, 0},
+			0,
+			0,
+			true,
+		},
+		{
+			"test3",
+			args{1, 0},
+			0,
+			0,
+			false,
+		},
+		{
+			"test4",
+			args{1, 0},
+			1,
+			1,
+			false,
+		},
+		{
+			"test5",
+			args{1, 1},
+			1,
+			1,
+			false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
