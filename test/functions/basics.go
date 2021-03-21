@@ -1,6 +1,7 @@
 package functions
 
 import (
+	"errors"
 	"fmt"
 )
 
@@ -54,4 +55,11 @@ func Data() {
 	julia := p{"Julia", 40, "cat"}
 	fmt.Printf("Type: %T\n", julia)
 	fmt.Printf("Value: %v\n", julia)
+}
+
+func Functions(i int, j int) (int, int, error) {
+	if i == 0 {
+		return 0, 0, errors.New("it is an error!")
+	}
+	return 1, 1, nil
 }
