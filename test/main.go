@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	functions.HelloWorld()
+	functions.Data()
 }

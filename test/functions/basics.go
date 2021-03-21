@@ -40,3 +40,18 @@ func HelloWorld() {
 	}
 
 }
+
+func Data() {
+	type p struct {
+		name string
+		age  int
+		pet  string
+	}
+	bob := p{}
+	fmt.Printf("Type: %T\n", bob)
+	fmt.Printf("Value: %v\n", bob)
+
+	julia := p{"Julia", 40, "cat"}
+	fmt.Printf("Type: %T\n", julia)
+	fmt.Printf("Value: %v\n", julia)
+}
