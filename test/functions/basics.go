@@ -63,3 +63,24 @@ func Functions(i int, j int) (int, int, error) {
 	}
 	return 1, 1, nil
 }
+
+func Pointers() {
+	var x *int
+	fmt.Printf("Type: %T\n", x)
+
+	var i interface{}
+	fmt.Printf("Type: %T\n", i)
+
+	type j interface{}
+	type p struct {
+		name string
+		age  int
+		pet  j
+	}
+
+	var v j
+	var w p
+	fmt.Printf("Type: %T\n", v)
+	fmt.Printf("Type: %T\n", w)
+
+}
